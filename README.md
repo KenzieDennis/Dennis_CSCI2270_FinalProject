@@ -1,4 +1,7 @@
 # Dennis_CSCI2270_FinalProject
  Project Summary:
 
- I am going to use a linked list to simulate the children's game "telephone", where the first player starts with a sentence/phrase and whispers it to the person sitting next to them and then that person whispers it to the person sitting next to them and so on. This game is often used as a metaphor to represent human miscommunication, because when it's played the ending phrase is usually very different from the original phrase by the time it reaches the last person. My program will slightly alter the message as it reaches each "player", in a similar way to how it would be altered in a real game of telephone. The more "players" there are, the more the message will change.
+ I used a linked list to simulate the game "telephone". The telephone game is often played as a children’s party game. In this game, the first player thinks of a message and whispers it to the person sitting next to them, who then whispers it to the person sitting next to them and so on. The message is passed down the line until it eventually reaches the final player who then announces the message to the group. 
+
+Errors tend to accumulate as the message is being passed from player to player, and is often significantly different than what it started as by the time it reaches the final player. Generally, the more players there are, the more the message will be distorted. It is often used as a metaphor for the unreliability of human recollection or the inaccuracies of rumors and gossip.
+
