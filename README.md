@@ -13,6 +13,11 @@ Once you start the game (option 5 on the menu), the message you type goes throug
 # How to run: 
 
 The files needed to run this program are: "main.cpp", "Telephone.cpp", "Telephone.h", and "WordData.txt".
+
+After contribution from @Dpasi314:
+To use, type make in terminal in the directory with all the files. Then ./main
+
+# How to Play: 
 When you run the program, this menu will appear:
 
 ======Main Menu======
