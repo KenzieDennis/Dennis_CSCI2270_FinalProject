@@ -280,7 +280,8 @@ void Telephone::fillWordData()
                 }
             }
         }
-            MainWordList.push_back(temp);
+	  if(temp.name != " ")
+      		MainWordList.push_back(temp);
     }
 }
 
@@ -289,8 +290,13 @@ void Telephone::showWordList()
     cout<<" "<<endl;
     cout<<"Here's a list of the words you can use to build your starting sentence: "<<endl;
     cout<<" "<<endl;
+    std::string delim = ", ";
+    bool useDelim = false;
     for(int i = 0; i < MainWordList.size(); i++){
-        cout<<MainWordList[i].name<<", ";
+	// Used two and one  as the previous index because there's a random whitespace I can't find >:(
+    	useDelim = (i == MainWordList.size() - 2 || i == MainWordList.size() - 1) ? false : true;
+	cout << MainWordList[i].name << ((useDelim) ? delim : "");
+     //   cout<<MainWordList[i].name<<", ";
     }
     cout<<endl;
 }
@@ -336,6 +342,7 @@ void Telephone::addWords(std::string MainWord, std::string List)
     }
 
     newWord.rhymes = newRhymes;
-    MainWordList.push_back(newWord);
+    if(newWord.name != " ")
+    	MainWordList.push_back(newWord);
     cout<<"You added "<<MainWord<<" to the word list!"<<endl;
 }
